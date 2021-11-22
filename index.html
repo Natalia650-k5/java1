@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stickerz</title>
+    <link rel="stylesheet" href="css/controls.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/burger-menu.css">
+    <link rel="stylesheet" href="css/products.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="icon" href="img/baby-yoda.svg">
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="container">
+          <div class="logo">Stickerz</div>
+          <label class="burger-icon" for="burger-checkbox">☰</label>
+          <input type="checkbox" id="burger-checkbox" />
+          <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#products">Products</a>
+            <a href="#contacts">Contacts</a>
+            <a href="cart.html">Cart</a>
+            <div class="clock"></div>
+          </div>
+        </div>
+      </nav>
+      <div class="banner container">
+        <h1>Stickerz</h1>
+        <button class="button">Shop now</button>
+      </div>
+      <div class="carousel container">
+        <button class="prev">🔙</button>
+        <div class="slides-container"></div>
+        <button class="next">➡️</button>
+      </div>
+    </header>
+    <main class="container">
+      <h2 id="products" class="product-header">Products</h2>
+      <button class="button card-button sort-asc">Sort by price up</button>
+      <button class="button card-button sort-desc">Sort by price down</button>
+      <button class="button card-button cat-button cat-large">Large</button>
+      <button class="button card-button cat-button cat-small">Small</button>
+      <button class="button card-button cat-button cat-all selected">All</button>
+      <div class="products"></div>
+    </main>
+    <footer class="container">
+      <h2 id="contacts">Contacts!</h2>
+      <form action="" method="POST">
+        <label
+          >Your name:
+          <input type="text" name="user-name" placeholder="User Name" />
+        </label>
+        <label
+          >Your email:
+          <input type="email" name="user-email" placeholder="User Email" />
+        </label>
+        <input type="submit" />
+      </form>
+      <p>Some contacts</p>
+    </footer>
+    <script src="js/clock.js"></script>
+    <script src="js/product-list.js"></script>
+    <script src="js/carousel.js"></script>
+  </body>
+</html>
